@@ -1,12 +1,24 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  standalone: true,
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.html',
+  styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('consiencia_negra');
+export class AppComponent {
+  title = 'consiencia_negra';
+
+  // Variável para controlar o menu no celular
+  menuAberto = false;
+
+  toggleMenu() {
+    this.menuAberto = !this.menuAberto;
+  }
+
+  fecharMenu() {
+    this.menuAberto = false;
+  }
 }

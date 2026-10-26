@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+/* Paleta de Cores Original - Terracota e Creme */
+body {
+  background-color: #faedcd !important; /* Fundo creme claro original */
+  color: #1f1f1f !important; /* Texto escuro original */
+}
+
+/* Títulos principais em Terracota com linha divisória em Dourado */
+h1,
+h2,
+h3,
+.text-terracota {
+  color: #4a2810 !important;
+}
+
+.border-bottom {
+  border-color: #d4a373 !important;
+}
+
+/* Configuração dos links da Navbar */
+.nav-link {
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.nav-link:hover {
+  color: #d4a373 !important;
+}
+
+/* Destaque dourado/areia para a página atual onde o usuário está navegando */
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #d4a373 !important;
+  font-weight: 700;
+  border-bottom: 2px solid #d4a373;
+}
+
+/* Estilização complementar para os Cards das outras páginas */
+.card {
+  background-color: #ffffff !important;
+  border: none !important;
+}
+
+/* Cor do card de destaque lateral da Home */
+.col-lg-4 .card {
+  background-color: #4a2810 !important;
+  color: #ffffff !important;
+}
+
+.col-lg-4 .card .card-title {
+  color: #d4a373 !important;
+}
