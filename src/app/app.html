@@ -1,17 +1,12 @@
 <!-- NAVBAR TERRACOTA E CREME RESPONSIVA -->
-<nav
-  class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm"
-  style="background-color: #4a2810"
->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm" style="background-color: #4a2810">
   <div class="container">
-    <a
-      class="navbar-brand fw-bold fs-4 d-flex align-items-center"
-      routerLink="/"
-      (click)="fecharMenu()"
-    >
-      <span class="me-2">✊🏿✊🏻</span> Consciência Viva
-    </a>
 
+    <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" routerLink="/" (click)="fecharMenu()">
+      <img src="consciencia-negra-icon.png" alt="Consciência Negra Icon" class="me-2"
+        style="width: 40px; height: auto;">
+      Consciência Viva
+    </a>
     <!-- Botão corrigido com evento de clique do Angular -->
     <button class="navbar-toggler border-0" type="button" (click)="toggleMenu()">
       <span class="navbar-toggler-icon"></span>
@@ -21,44 +16,28 @@
     <div class="collapse navbar-collapse" [class.show]="menuAberto" id="navbarNav">
       <ul class="navbar-nav ms-auto gap-2 text-center py-3 py-lg-0">
         <li class="nav-item">
-          <a
-            class="nav-link px-3"
-            routerLink="/"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
-            (click)="fecharMenu()"
-          >
+          <a class="nav-link px-3" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+            (click)="fecharMenu()">
             Início
           </a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link px-3"
-            routerLink="/origem"
-            routerLinkActive="active"
-            (click)="fecharMenu()"
-          >
+          <a class="nav-link px-3" routerLink="/origem" routerLinkActive="active" (click)="fecharMenu()">
             Origem e Zumbi
           </a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link px-3"
-            routerLink="/personalidades"
-            routerLinkActive="active"
-            (click)="fecharMenu()"
-          >
+          <a class="nav-link px-3" routerLink="/personalidades" routerLinkActive="active" (click)="fecharMenu()">
             Personalidades
           </a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link px-3"
-            routerLink="/cultura"
-            routerLinkActive="active"
-            (click)="fecharMenu()"
-          >
+          <a class="nav-link px-3" routerLink="/cultura" routerLinkActive="active" (click)="fecharMenu()">
             Cultura
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" routerLink="/sobre" routerLinkActive="active" (click)="fecharMenu()">Sobre
           </a>
         </li>
       </ul>
@@ -72,20 +51,14 @@
 </div>
 
 <!-- RODAPÉ -->
-<footer
-  class="text-white text-center py-4 mt-auto"
-  style="background-color: #4a2810; border-top: 1px solid rgba(255, 255, 255, 0.1)"
->
+<footer class="text-white text-center py-4 mt-auto"
+  style="background-color: #4a2810; border-top: 1px solid rgba(255, 255, 255, 0.1)">
   <div class="container">
-    <p
-      class="mb-1 fw-bold text-uppercase tracking-wider"
-      style="color: #d4a373; letter-spacing: 1px"
-    >
-      ✊🏿✊🏻 História • Cultura • Resistência
+    <p class="mb-1 fw-bold text-uppercase tracking-wider" style="color: #d4a373; letter-spacing: 1px">
+      História • Cultura • Resistência
     </p>
-    <small class="text-white-50"
-      >&copy; 2026 - Trabalho Escolar sobre a Consciência Negra. Desenvolvido por Erick de Andrade
-      Amado. Turma 3003.</small
-    >
+    <small class="text-white-50">&copy; 2026 - Trabalho Escolar sobre a Consciência Negra. Desenvolvido por Erick de
+      Andrade
+      Amado. Turma 3003.</small>
   </div>
 </footer>
