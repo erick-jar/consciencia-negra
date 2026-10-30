@@ -1,5 +1,5 @@
 <!-- NAVBAR TERRACOTA E CREME RESPONSIVA -->
-<nav class="navbar navbar-expand-sm navbar-dark sticky-top shadow-sm" style="background-color: #4a2810">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm" style="background-color: #4a2810">
   <div class="container">
 
     <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" routerLink="/" (click)="fecharMenu()">
@@ -8,42 +8,42 @@
       Consciência Viva
     </a>
 
-    <!-- Botão do menu mobile -->
+    <!-- Botão do menu mobile (hambúrguer) -->
     <button class="navbar-toggler border-0" type="button" (click)="toggleMenu()">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Menu que agora mantém os itens lado a lado em telas maiores/médias -->
-    <div class="collapse navbar-collapse justify-content-end" [class.show]="menuAberto" id="navbarNav">
-      <ul class="navbar-nav align-items-center gap-1 py-2 py-sm-0">
+    <!-- Menu de navegação -->
+    <div class="collapse navbar-collapse" [class.show]="menuAberto" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-2 text-center py-3 py-lg-0">
         <li class="nav-item">
-          <a class="nav-link px-2 text-nowrap" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+          <a class="nav-link px-3" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
             (click)="fecharMenu()">
             Início
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-2 text-nowrap" routerLink="/origem" routerLinkActive="active" (click)="fecharMenu()">
+          <a class="nav-link px-3" routerLink="/origem" routerLinkActive="active" (click)="fecharMenu()">
             Origem e Zumbi
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-2 text-nowrap" routerLink="/personalidades" routerLinkActive="active" (click)="fecharMenu()">
+          <a class="nav-link px-3" routerLink="/personalidades" routerLinkActive="active" (click)="fecharMenu()">
             Personalidades
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-2 text-nowrap" routerLink="/cultura" routerLinkActive="active" (click)="fecharMenu()">
+          <a class="nav-link px-3" routerLink="/cultura" routerLinkActive="active" (click)="fecharMenu()">
             Cultura
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-2 text-nowrap" routerLink="/linhaTempo" routerLinkActive="active" (click)="fecharMenu()">
+          <a class="nav-link px-3" routerLink="/linhaTempo" routerLinkActive="active" (click)="fecharMenu()">
             Linha do Tempo
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-2 text-nowrap" routerLink="/sobre" routerLinkActive="active" (click)="fecharMenu()">
+          <a class="nav-link px-3" routerLink="/sobre" routerLinkActive="active" (click)="fecharMenu()">
             Sobre
           </a>
         </li>
